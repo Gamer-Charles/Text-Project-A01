@@ -1,0 +1,43 @@
+:root {
+    --red: #FF0000;
+    --green: #00FF00;
+    --blue: #0000FF;
+    --white: #FFFFFF;
+    --black: #000000;
+    --orange: #ff9900;
+}
+
+body {
+    background: var(--bg);
+    color: var(--fontColor);
+    font-family: helvetica;
+}
+
+li {
+    list-style: circle;
+}
+
+.list {
+    list-style: square;
+}
+
+.light-theme {
+    --bg: var(--green);
+    --fontColor: var(--black);
+    --btnBg: var(--orange);
+    --btnFontColor: var(--blue);
+}
+.dark-theme {
+    --bg: var(--black);
+    --fontColor: var(--white);
+    --btnBg: var(--green);
+    --btnFontColor: var(--red);
+}
+
+.btn {
+    position: relative;
+    border: solid;
+    border-width: 2px;
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+}
